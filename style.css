@@ -93,13 +93,10 @@ body{
     display: none;
 }
 
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 
-const footer = document.getElementById("footer");
-
-footer.addEventListener("mouseenter", () => {
-    footer.style.backgroundColor = "#444"; // Darker shade on hover
-});
-
-footer.addEventListener("mouseleave", () => {
-    footer.style.backgroundColor = "#222"; // Reset to default
-});
