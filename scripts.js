@@ -87,4 +87,12 @@ const checkwinner =()=>{
 newgame.addEventListener("click", resetgame);
 reset.addEventListener("click", resetgame);
 
- 
+ const footer = document.getElementById("footer");
+
+footer.addEventListener("mouseenter", () => {
+    footer.style.backgroundColor = "#444"; // Darker shade on hover
+});
+
+footer.addEventListener("mouseleave", () => {
+    footer.style.backgroundColor = "#222"; // Reset to default
+});
